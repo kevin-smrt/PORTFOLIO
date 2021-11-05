@@ -1,5 +1,5 @@
 // Récupère la classe Router du module express
-import { Router } from "express";
+const { Router } = require("express");
 
 // Initialisation du router
 const router = Router();
@@ -14,4 +14,4 @@ router.use((req, res) => {
     res.status(404).sendFile(__dirname + "/views/404.html");
 });
 
-export default router;
+module.exports = router;

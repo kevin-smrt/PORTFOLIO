@@ -1,17 +1,17 @@
-import express, { json, urlencoded, static } from "express";
-import router from "./app/router";
+const express = require("express");
+const router = require("./app/router");
 
 const PORT = 3000;
 const app = express();
 
-app.use(json());
+app.use(express.json());
 // On ajoute notre middleware qui intercept les données envoyer sous format urlencoded et les mets dans le body
-app.use(urlencoded({
+app.use(express.urlencoded({
     extended: true
 }));
 
 // on définit le dossier des ressources statiques
-app.use(static("./public"));
+app.use(express.static("./public"));
 
 app.use(router);
 
