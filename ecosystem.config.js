@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    script: 'server.js',
+    script: 'bin/www',
     watch: '.'
   }],
 
