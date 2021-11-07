@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/kevin-smrt/PORTFOLIO#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.7.0"
   }
 }
