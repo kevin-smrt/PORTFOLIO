@@ -27,7 +27,7 @@ function sendMail(event) {
         body: info
     }).then((res) => res.json())
     .then((data) => {
-        alert(data.msg);
+        console.log(data);
     })
 }
 
